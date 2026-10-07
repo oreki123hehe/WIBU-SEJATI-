@@ -1,21 +1,36 @@
-# WIBU-SEJATI-
+# WIBU SEJATI
 
-Aplikasi Android anime berbahasa Indonesia.
+Android anime catalog/player app in Indonesian.
 
-## Konsep
-Wibu Sejati menggabungkan katalog anime, pencarian, detail, episode, pemutar, watchlist, riwayat, dan notifikasi episode baru dalam satu aplikasi.
+## Included in this milestone
+- Android app project
+- Home, Explore, Search, Detail, Episodes
+- Watchlist and History
+- Deep-link episode player shell
+- Jikan metadata integration
+- Node.js backend API
+- Episode detection worker
+- UI and source-integration contracts
 
-## Prinsip arsitektur
-- UI utama dirancang dan dikunci sejak awal.
-- Backend dapat berkembang tanpa mengacak navigasi utama.
-- Metadata anime dipisahkan dari sumber tontonan.
-- Sumber tontonan hanya diintegrasikan jika penggunaan dan embedding-nya diizinkan.
-- Aplikasi tidak meng-host ulang atau mengunduh konten berhak cipta tanpa izin.
+Metadata and video sources are intentionally separated. No DRM bypass, protected-stream extraction, or unauthorized re-hosting is implemented.
 
-## Struktur
-- `app/` — Android application
-- `backend/` — API dan sinkronisasi katalog/episode
-- `docs/` — arsitektur, kontrak data, dan roadmap
+## Project
+- app/ — Android
+- backend/ — API + worker
+- docs/ — project contract
 
-## Status
-Foundation selesai. Tahap berikutnya: Android project + backend contract.
+## Build
+Open this repository as an Android project with JDK 17 and Android SDK 36.
+
+Backend:
+```bash
+cd backend
+npm start
+```
+
+Worker:
+```bash
+npm run worker
+```
+
+Status: all-in foundation milestone.

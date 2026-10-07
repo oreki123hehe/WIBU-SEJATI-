@@ -6,6 +6,7 @@ local.properties
 *.iml
 .idea/
 .vscode/
+*.class
 
 # Secrets
 .env
@@ -13,5 +14,5 @@ local.properties
 *.jks
 
 # Node
-node_modules/
+backend/node_modules/
 npm-debug.log*
