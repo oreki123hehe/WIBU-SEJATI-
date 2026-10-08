@@ -1,0 +1,29 @@
+*{box-sizing:border-box}
+body{margin:0;background:#0b0a10;color:#f7f3ff;font-family:system-ui,-apple-system,sans-serif}
+button,input{font:inherit}
+.app{min-height:100vh;background:#0b0a10;padding-bottom:78px}
+.topbar{height:64px;padding:0 20px;display:flex;align-items:center;justify-content:space-between;background:#0b0a10;position:sticky;top:0;z-index:10}
+.brand{font-weight:900;letter-spacing:1.5px}
+.top-actions{display:flex;gap:18px;align-items:center}
+.content{max-width:1100px;margin:auto;padding:0 18px}
+.hero{min-height:390px;border-radius:24px;margin:10px 0 32px;padding:34px 28px;display:flex;align-items:end;background:linear-gradient(135deg,#24143c,#12101a 70%);overflow:hidden}
+.hero h1{font-size:clamp(38px,8vw,70px);line-height:.98;margin:14px 0}
+.hero p{color:#aaa4b8;max-width:480px}
+.badge{color:#b66dff;font-size:12px;font-weight:800;letter-spacing:2px}
+.hero button{border:0;border-radius:12px;padding:13px 18px;background:#b66dff;color:#fff;font-weight:800;display:flex;gap:8px;align-items:center}
+.section-title{display:flex;justify-content:space-between;align-items:center;margin-bottom:15px}
+.section-title h2{margin:0;font-size:21px}
+.section-title span{color:#b66dff;font-size:13px}
+.anime-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:16px}
+.anime-card{background:#17151f;border-radius:17px;padding:10px;overflow:hidden}
+.poster{height:220px;border-radius:12px;background:linear-gradient(145deg,#211e2c,#34204a);display:flex;align-items:center;justify-content:center;color:#b66dff}
+.anime-card h3{font-size:15px;margin:12px 5px 5px}
+.anime-card p,.page p{font-size:13px;color:#aaa4b8;margin:0 5px 10px}
+.page{padding:25px 0}
+.page h1{font-size:32px}
+.search{height:50px;background:#17151f;border-radius:13px;display:flex;align-items:center;gap:10px;padding:0 15px;color:#aaa4b8}
+.search input{width:100%;border:0;outline:0;background:transparent;color:#fff}
+.bottom-nav{position:fixed;bottom:0;left:0;right:0;height:72px;background:#17151fee;backdrop-filter:blur(16px);display:flex;justify-content:center;gap:8px;z-index:20}
+.bottom-nav button{flex:1;max-width:130px;border:0;background:transparent;color:#aaa4b8;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;font-size:11px}
+.bottom-nav button.active{color:#b66dff}
+@media(max-width:600px){.hero{min-height:350px;padding:25px 20px}.anime-grid{grid-template-columns:repeat(2,1fr)}.poster{height:190px}}

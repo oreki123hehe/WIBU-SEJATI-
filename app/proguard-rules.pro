@@ -1,1 +1,0 @@
-# Wibu Sejati release rules
